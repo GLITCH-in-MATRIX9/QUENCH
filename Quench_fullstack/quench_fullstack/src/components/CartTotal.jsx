@@ -1,6 +1,12 @@
 import React from 'react'
 
-const Connection = () => {
+const CartTotal = () => {
+
+    const
+
+
+
+
   return (
     <div>
       
@@ -8,4 +14,4 @@ const Connection = () => {
   )
 }
 
-export default Connection
+export default CartTotal
