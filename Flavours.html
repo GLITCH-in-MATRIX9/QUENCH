@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles/Flavours.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
-</head>
-<body>
-     <div class="navbar-div">
+  </head>
+  <body>
+    <div class="navbar-div">
       <nav>
         <!-- navbar items  -->
         <div class="heading">
@@ -21,7 +21,9 @@
         <div class="navbar-left">
           <ul class="navbar-left-ul">
             <a class="navbar-links" href="./index.html">Home</a>
-            <a class="navbar-links active" href="./Flavours.html">Shop Flavours</a>
+            <a class="navbar-links active" href="./Flavours.html"
+              >Shop Flavours</a
+            >
             <a class="navbar-links" href="#services">Services</a>
             <a class="navbar-links" href="#contact">Contact</a>
           </ul>
@@ -29,7 +31,7 @@
         <div class="navbar-right">
           <!-- right side of navbar -->
           <ul class="navbar-right-ul">
-            <a
+            <a href="./cart.html"
               ><img class="navbar-icons" src="flavours/icons/shopping_bag.png"
             /></a>
             <a><img class="navbar-icons" src="flavours/icons/heart.png" /></a>
@@ -40,59 +42,264 @@
     </div>
 
     <!-- sort and filter div -->
-     <div class="sorting-div">
-        <div class="sorting-right">
-            <h2 class="sorting-heading">Sort By</h2>
-            <select class="sorting-select">
-                <option value="default">Default</option>
-                <option value="price-low-high">Price: Low to High</option>
-                <option value="price-high-low">Price: High to Low</option>
-                <option value="newest">Newest</option>
-            </select>
-        </div>
-        
-     </div>
+    <div class="sorting-div">
+      <div class="sorting-right">
+        <h2 class="sorting-heading">Sort By</h2>
+        <select class="sorting-select">
+          <option value="default">Default</option>
+          <option value="price-low-high">Price: Low to High</option>
+          <option value="price-high-low">Price: High to Low</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="snackbar">Added Item to cart.</div>
 
     <!-- flavours section -->
-     <div class="flavours-section">
-        <div class="flavours-section-left">
-            <div class="flavour-filters-selectors">
-                <h2 class="flavour-filters-heading">Filters</h2>
-                <div class="flavour-filter">
-                    <label for="flavour-type">Flavour Type:</label>
-                    <select id="flavour-type" class="flavour-select">
-                        <option value="all">All</option>
-                        <option value="citrus">Citrus</option>
-                        <option value="berry">Berry</option>
-                        <option value="tropical">Tropical</option>
-                    </select>
-                </div>
-                <div class="flavour-filter">
-                    <label for="price-range">Price Range:</label>
-                    <input type="range" id="price-range" min="0" max="20" step="1">
-                </div>
-
-            </div>
-
+    <div class="flavours-section">
+      <div class="flavours-section-left">
+        <div class="flavour-filters-selectors">
+          <h2 class="flavour-filters-heading">Filters</h2>
+          <div class="flavour-filter">
+            <label for="flavour-type">Flavour Type:</label>
+            <select id="flavour-type" class="flavour-select">
+              <option value="all">All</option>
+              <option value="citrus">Citrus</option>
+              <option value="berry">Berry</option>
+              <option value="tropical">Tropical</option>
+            </select>
+          </div>
+          <div class="flavour-filter">
+            <label for="price-range"
+              >Price Range: ₹<span id="price-value">150</span></label
+            >
+            <input
+              type="range"
+              id="price-range"
+              min="70"
+              max="150"
+              step="1"
+              value="150"
+            />
+          </div>
         </div>
-        <div class="flavours-section-right">
-            <div class="flavour-card">
-                <img src="flavours/images/juice1.jpg" alt="Juice 1" class="flavour-image">
-                <h3 class="flavour-name">Tropical Bliss</h3>
-                <p class="flavour-description">A refreshing blend of pineapple, mango, and coconut.</p>
-                <span class="flavour-price">$5.99</span>
-                <button class="flavour-button">Add to Cart</button>
-            </div>
-            <div class="flavour-card">
-                <img src="flavours/images/juice2.jpg" alt="Juice 2" class="flavour-image">
-                <h3 class="flavour-name">Berry Burst</h3>
-                <p class="flavour-description">A delicious mix of strawberries, blueberries, and raspberries.</p>
-                <span class="flavour-price">$6.49</span>
-                <button class="flavour-button">Add to Cart</button>
-            </div>
-
+      </div>
+      <div class="flavours-section-right">
+        <div class="flavour-card" data-type="tropical" data-price="99">
+          <img
+            src="flavours/Juice_with_background/banana.png"
+            alt="Banana Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Banana Breeze</h3>
+          <p class="flavour-description">
+            A creamy and smooth blend of ripe bananas, perfect for an energy
+            boost.
+          </p>
+          <span class="flavour-price">₹99</span>
+          <button class="flavour-button">Add to Cart</button>
         </div>
-     </div>
-    
-</body>
+
+        <div class="flavour-card" data-type="berry" data-price="149">
+          <img
+            src="flavours/Juice_with_background/blueberry.png"
+            alt="Blueberry Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Blueberry Bliss</h3>
+          <p class="flavour-description">
+            A tangy and antioxidant-rich delight packed with fresh blueberries.
+          </p>
+          <span class="flavour-price">₹149</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="tropical" data-price="139">
+          <img
+            src="flavours/Juice_with_background/dragonfruit.png"
+            alt="Dragonfruit Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Dragon Zing</h3>
+          <p class="flavour-description">
+            An exotic, mildly sweet juice made from vibrant dragonfruit.
+          </p>
+          <span class="flavour-price">₹139</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="berry" data-price="89">
+          <img
+            src="flavours/Juice_with_background/grape.png"
+            alt="Grape Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Grape Glaze</h3>
+          <p class="flavour-description">
+            A rich and refreshing burst of juicy grapes in every sip.
+          </p>
+          <span class="flavour-price">₹89</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="tropical" data-price="79">
+          <img
+            src="flavours/Juice_with_background/guava.png"
+            alt="Guava Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Guava Glow</h3>
+          <p class="flavour-description">
+            Packed with Vitamin C, this tropical juice boosts immunity and
+            refreshes.
+          </p>
+          <span class="flavour-price">₹79</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="tropical" data-price="109">
+          <img
+            src="flavours/Juice_with_background/kiwi.png"
+            alt="Kiwi Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Kiwi Kick</h3>
+          <p class="flavour-description">
+            A tangy and sweet kiwi fusion packed with nutrients and flavor.
+          </p>
+          <span class="flavour-price">₹109</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="citrus" data-price="59">
+          <img
+            src="flavours/Juice_with_background/lemon.png"
+            alt="Lemon Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Zesty Lemon</h3>
+          <p class="flavour-description">
+            A citrusy, refreshing lemonade perfect for summer days.
+          </p>
+          <span class="flavour-price">₹59</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="tropical" data-price="99">
+          <img
+            src="flavours/Juice_with_background/LICHI.png"
+            alt="Litchi Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Litchi Lush</h3>
+          <p class="flavour-description">
+            A fragrant and juicy blend of sweet litchis for pure indulgence.
+          </p>
+          <span class="flavour-price">₹99</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="tropical" data-price="119">
+          <img
+            src="flavours/Juice_with_background/mango.png"
+            alt="Mango Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Mango Magic</h3>
+          <p class="flavour-description">
+            A classic tropical treat made from ripe, juicy mangoes.
+          </p>
+          <span class="flavour-price">₹119</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="mixed" data-price="129">
+          <img
+            src="flavours/Juice_with_background/mixedfruit.png"
+            alt="Mixed Fruit Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Fruit Carnival</h3>
+          <p class="flavour-description">
+            A cheerful mix of seasonal fruits blended into a juicy celebration.
+          </p>
+          <span class="flavour-price">₹129</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="tropical" data-price="89">
+          <img
+            src="flavours/Juice_with_background/papaya.png"
+            alt="Papaya Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Papaya Punch</h3>
+          <p class="flavour-description">
+            Mild and smooth papaya juice that's good for digestion and health.
+          </p>
+          <span class="flavour-price">₹89</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="tropical" data-price="109">
+          <img
+            src="flavours/Juice_with_background/pineapple.png"
+            alt="Pineapple Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Pineapple Pop</h3>
+          <p class="flavour-description">
+            A tangy-sweet tropical delight, bursting with freshness.
+          </p>
+          <span class="flavour-price">₹109</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="berry" data-price="119">
+          <img
+            src="flavours/Juice_with_background/strawberry.png"
+            alt="Strawberry Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Strawberry Splash</h3>
+          <p class="flavour-description">
+            Juicy, sweet strawberries blended into a flavorful pink treat.
+          </p>
+          <span class="flavour-price">₹119</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+
+        <div class="flavour-card" data-type="citrus" data-price="69">
+          <img
+            src="flavours/Juice_with_background/watermelon.png"
+            alt="Watermelon Juice"
+            class="flavour-image"
+          />
+          <h3 class="flavour-name">Melon Mist</h3>
+          <p class="flavour-description">
+            Cool and juicy watermelon juice, perfect for hot sunny days.
+          </p>
+          <span class="flavour-price">₹69</span>
+          <button class="flavour-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2 class="footer-logo">Quench</h2>
+        <p class="footer-tagline">Refreshing your day, one sip at a time.</p>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="footer-copy">© 2023 Quench. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./Scripts/flavours.js"></script>
+  </body>
 </html>

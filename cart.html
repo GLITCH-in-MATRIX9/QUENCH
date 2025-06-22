@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="./Styles/cart.css" />
+  </head>
+  <body>
+    <div class="navbar-div">
+      <nav>
+        <!-- navbar items  -->
+        <div class="heading">
+          <h1 class="logo-heading">Quench</h1>
+        </div>
+        <!-- left side -->
+        <div class="navbar-left">
+          <ul class="navbar-left-ul">
+            <a class="navbar-links" href="./index.html">Home</a>
+            <a class="navbar-links" href="./Flavours.html"
+              >Shop Flavours</a
+            >
+            <a class="navbar-links" href="#services">Services</a>
+            <a class="navbar-links" href="#contact">Contact</a>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <!-- right side of navbar -->
+          <ul class="navbar-right-ul">
+            <a href="./cart.html"
+              ><img class="navbar-icons" src="flavours/icons/shopping_bag.png"
+            /></a>
+            <a><img class="navbar-icons" src="flavours/icons/heart.png" /></a>
+            <button class="navbar-button">Juice up →</button>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <h1>Your Cart</h1>
+    <div class="cart">
+        <div id="cart-container"> </div>
+
+    <div class="cart-total">
+      <h2 class="cart-heading">Total: <span id="cart-total"></span> Rs</h2>
+      <button class="checkout-button" id="checkout-button">Checkout</button>
+    </div>
+
+    </div>
+    
+
+
+
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2 class="footer-logo">Quench</h2>
+        <p class="footer-tagline">Refreshing your day, one sip at a time.</p>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="footer-copy">© 2023 Quench. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./Scripts/cart.js"></script>
+  </body>
+</html>

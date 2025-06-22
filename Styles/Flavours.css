@@ -96,6 +96,7 @@ a {
 }
 
 
+
 /* SORTING SECTION */
 .sorting-div {
   display: flex;
@@ -179,6 +180,9 @@ a {
 }
 
 .flavour-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fcfcfc;
   padding: 1.2rem;
   border-radius: 10px;
@@ -231,4 +235,112 @@ a {
 
 .flavour-button:hover {
   background-color: #14633b;
+}
+
+
+/* snackbar */
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #13ae25;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius: 8px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 1.5s;
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.site-footer {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #e2e2e2;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  color: #e13f3b;
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.footer-tagline {
+  color: #6b6b6b;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #e13f3b;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #999;
 }
