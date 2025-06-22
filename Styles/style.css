@@ -214,7 +214,7 @@ span {
 }
 .lower-div {
   width: 100%;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
 }
 
 .card-heading {
@@ -241,6 +241,27 @@ span {
   background-color: #a41411;
   color: white;
 }
+.view-more-button{
+  text-align: center;
+}
+
+
+.view-more-button-style{
+  background-color: #e13f3b;
+  color: #ffffff;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-top: 20px;
+}
+.view-more-button-style:hover {
+  background-color: #781817;
+  color: white;
+}
 
 /* benefits section */
 .benefits-section {
@@ -251,7 +272,7 @@ span {
   padding: 30px;
   background-color: #ffffff;
   border-radius: 15px;
-  width: 100%;
+  width: fit-content;
 }
 
 .benefits-heading {
