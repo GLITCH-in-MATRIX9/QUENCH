@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/Flavours.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+     <div class="navbar-div">
+      <nav>
+        <!-- navbar items  -->
+        <div class="heading">
+          <h1 class="logo-heading">Quench</h1>
+        </div>
+        <!-- left side -->
+        <div class="navbar-left">
+          <ul class="navbar-left-ul">
+            <a class="navbar-links" href="./index.html">Home</a>
+            <a class="navbar-links active" href="./Flavours.html">Shop Flavours</a>
+            <a class="navbar-links" href="#services">Services</a>
+            <a class="navbar-links" href="#contact">Contact</a>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <!-- right side of navbar -->
+          <ul class="navbar-right-ul">
+            <a
+              ><img class="navbar-icons" src="flavours/icons/shopping_bag.png"
+            /></a>
+            <a><img class="navbar-icons" src="flavours/icons/heart.png" /></a>
+            <button class="navbar-button">Juice up →</button>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- sort and filter div -->
+     <div class="sorting-div">
+        <div class="sorting-right">
+            <h2 class="sorting-heading">Sort By</h2>
+            <select class="sorting-select">
+                <option value="default">Default</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+                <option value="newest">Newest</option>
+            </select>
+        </div>
+        
+     </div>
+
+    <!-- flavours section -->
+     <div class="flavours-section">
+        <div class="flavours-section-left">
+            <div class="flavour-filters-selectors">
+                <h2 class="flavour-filters-heading">Filters</h2>
+                <div class="flavour-filter">
+                    <label for="flavour-type">Flavour Type:</label>
+                    <select id="flavour-type" class="flavour-select">
+                        <option value="all">All</option>
+                        <option value="citrus">Citrus</option>
+                        <option value="berry">Berry</option>
+                        <option value="tropical">Tropical</option>
+                    </select>
+                </div>
+                <div class="flavour-filter">
+                    <label for="price-range">Price Range:</label>
+                    <input type="range" id="price-range" min="0" max="20" step="1">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="flavours-section-right">
+            <div class="flavour-card">
+                <img src="flavours/images/juice1.jpg" alt="Juice 1" class="flavour-image">
+                <h3 class="flavour-name">Tropical Bliss</h3>
+                <p class="flavour-description">A refreshing blend of pineapple, mango, and coconut.</p>
+                <span class="flavour-price">$5.99</span>
+                <button class="flavour-button">Add to Cart</button>
+            </div>
+            <div class="flavour-card">
+                <img src="flavours/images/juice2.jpg" alt="Juice 2" class="flavour-image">
+                <h3 class="flavour-name">Berry Burst</h3>
+                <p class="flavour-description">A delicious mix of strawberries, blueberries, and raspberries.</p>
+                <span class="flavour-price">$6.49</span>
+                <button class="flavour-button">Add to Cart</button>
+            </div>
+
+        </div>
+     </div>
+    
+</body>
+</html>

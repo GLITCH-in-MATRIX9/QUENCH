@@ -1,141 +1,274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QUENCH</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <a href="#">QUENCH</a>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar-div">
+      <nav>
+        <!-- navbar items  -->
+        <div class="heading">
+          <h1 class="logo-heading">Quench</h1>
+        </div>
+        <!-- left side -->
+        <div class="navbar-left">
+          <ul class="navbar-left-ul">
+            <a class="navbar-links active" href="#home">Home</a>
+            <a class="navbar-links " href="./Flavours.html">Shop Flavours</a>
+            <a class="navbar-links" href="#services">Services</a>
+            <a class="navbar-links" href="#contact">Contact</a>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <!-- right side of navbar -->
+          <ul class="navbar-right-ul">
+            <a
+              ><img class="navbar-icons" src="flavours/icons/shopping_bag.png"
+            /></a>
+            <a><img class="navbar-icons" src="flavours/icons/heart.png" /></a>
+            <button class="navbar-button">Juice up →</button>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <div class="navbar-links">
-      <a href="./index.html">Home</a>
-      <a href="./aboutpage.html">About</a>
-      <a href="./drinkspage.html">Order Now</a>
-    </div>
-    <div class=" navbar-button">
-      <button>Contact</button>
-    </div>
-    <div class="navbar-toggle">
-      <span>&#9776;</span>
-    </div>
-  </nav>
 
-
-  <div class="container">
-    <div class="text">
-      <h2>TASTE IN EVERY <br>SINGLE DROP</br></h2>
-      <p>Discover the freshest, most delicious <br />juices delivered straight to your door.</p>
-      <br />
-
-      <button class="button_main" type="button" onclick="location.href='drinkspage.html'">LET'S QUENCH</button>
-    </div>
-  </div>
-  <div>
-    <div class="social-media">
-      <a href="https://www.facebook.com" target="_blank">
-        <img src="./flavours/icons8-facebook-50.png" alt="Facebook">
-      </a>
-      <a href="https://www.twitter.com" target="_blank">
-        <img src="./flavours/icons8-twitter-50.png" alt="Twitter">
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <img src="./flavours/icons8-instagram-50.png" alt="Instagram">
-      </a>
-    </div>
-  </div>
-
-  <!-- Image Cards -->
-  <div class="cards_container">
-    <div class="card">
-      <img src="./flavours/PNG_JUICES/juice (2)-Photoroom.png" alt="Product 1">
-      <div class="card-text">
-        <p>Lychee</p>
-        <span>$39</span>
+    <!-- hero section div -->
+    <div class="hero-section-div">
+      <div class="hero-section-div-container">
+        <div class="hero-section-left">
+          <h1 class="hero-section-heading">
+            <span>Welcome</span> to Our Juice Bar
+          </h1>
+          <p class="hero-section-subheading">
+            Freshly squeezed juices made from the finest ingredients.
+          </p>
+          <div class="hero-section-buttons-div">
+            <button class="hero-section-buttons">Order Now →</button>
+            <button class="hero-section-buttons">Learn More →</button>
+          </div>
+        </div>
+        <div class="hero-section-right"></div>
       </div>
-      <button class="button">Buy Now</button>
     </div>
-    <div class="card">
-      <img src="./flavours/PNG_JUICES/juice (1)-Photoroom.png" alt="Product 2">
-      <div class="card-text">
-        <p>Banana </p>
-        <span>$49</span>
+
+    <!-- discover our-range div -->
+    <div class="ranges-div-container">
+      <div class="ranges-heading-div">
+        <h1 class="ranges-heading"><span>Discover</span> Our Range ━</h1>
       </div>
-      <button class="button">Buy Now</button>
-    </div>
-    <div class="card">
-      <img src="./flavours/PNG_JUICES/juice (3)-Photoroom.png" alt="Product 3">
-      <div class="card-text">
-        <p>Pineapple</p>
-        <span>$67</span>
+
+      <div class="card-container-div">
+        <div class="card-container">
+          <div class="upper-div">
+            <img
+              class="card-image"
+              src="flavours/Juice_with_background/banana.png"
+              alt="Juice 1"
+            />
+          </div>
+          <div class="lower-div">
+            <h2 class="card-heading">Juice 1</h2>
+            <button class="ranges-card-button">Buy now</button>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="upper-div">
+            <img
+              class="card-image"
+              src="flavours/Juice_with_background/blueberry.png"
+              alt="Juice 1"
+            />
+          </div>
+          <div class="lower-div">
+            <h2 class="card-heading">Juice 1</h2>
+            <button class="ranges-card-button">Buy now</button>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="upper-div">
+            <img
+              class="card-image"
+              src="flavours/Juice_with_background/dragonfruit.png"
+              alt="Juice 1"
+            />
+          </div>
+          <div class="lower-div">
+            <h2 class="card-heading">Juice 1</h2>
+            <button class="ranges-card-button">Buy now</button>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="upper-div">
+            <img
+              class="card-image"
+              src="flavours/Juice_with_background/grape.png"
+              alt="Juice 1"
+            />
+          </div>
+          <div class="lower-div">
+            <h2 class="card-heading">Juice 1</h2>
+            <button class="ranges-card-button">Buy now</button>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="upper-div">
+            <img
+              class="card-image"
+              src="flavours/Juice_with_background/guava.png"
+              alt="Juice 1"
+            />
+          </div>
+          <div class="lower-div">
+            <h2 class="card-heading">Juice 1</h2>
+            <button class="ranges-card-button">Buy now</button>
+          </div>
+        </div>
       </div>
-      <button class="button">Buy Now</button>
     </div>
-    <div class="card">
-      <img src="./flavours/PNG_JUICES/juice (4)-Photoroom.png" alt="Product 4">
-      <div class="card-text">
-        <p>Kiwi</p>
-        <span>$68</span>
+
+    <!-- benefits section -->
+    <div class="benefits-section">
+      <h1 class="benefits-heading">
+        Huge benefits
+        <img
+          class="benefits-heading-image"
+          src="./flavours/icons/watermelon.png"
+        />
+        inside <br />our detoxified <span>Quench</span>
+      </h1>
+
+      <div class="benefits-cards">
+        <!-- card1 -->
+        <div class="benefits-card-container first-card">
+          <div class="benefit-card-upper-div">
+            <img
+              class="benefit-card-image"
+              src="flavours/benefits/benefit-images (1).jpg"
+              alt="Health Benefits"
+            />
+          </div>
+          <div class="benefit-card-lower-div">
+            <h2 class="benefit-card-heading">Health Benefits</h2>
+          </div>
+        </div>
+        <!-- card2  -->
+        <div class="benefits-card-container second-card">
+          <div class="benefit-card-upper-div">
+            <img
+              class="benefit-card-image"
+              src="flavours/benefits/benefit-images (2).jpg"
+              alt="Health Benefits"
+            />
+          </div>
+          <div class="benefit-card-lower-div">
+            <h2 class="benefit-card-heading">Health Benefits</h2>
+          </div>
+        </div>
+        <!-- card3-->
+        <div class="benefits-card-container">
+          <div class="benefit-card-upper-div">
+            <img
+              class="benefit-card-image"
+              src="flavours/benefits/benefit-images (3).jpg"
+              alt="Health Benefits"
+            />
+          </div>
+          <div class="benefit-card-lower-div">
+            <h2 class="benefit-card-heading">Health Benefits</h2>
+          </div>
+        </div>
+        <!-- card4-->
+        <div class="benefits-card-container second-card">
+          <div class="benefit-card-upper-div">
+            <img
+              class="benefit-card-image"
+              src="flavours/benefits/benefit-images (4).jpg"
+              alt="Health Benefits"
+            />
+          </div>
+          <div class="benefit-card-lower-div">
+            <h2 class="benefit-card-heading">Health Benefits</h2>
+          </div>
+        </div>
+        <!-- card5-->
+        <div class="benefits-card-container first-card">
+          <div class="benefit-card-upper-div">
+            <img
+              class="benefit-card-image"
+              src="flavours/benefits/benefit-images (5).jpg"
+              alt="Health Benefits"
+            />
+          </div>
+          <div class="benefit-card-lower-div">
+            <h2 class="benefit-card-heading">Health Benefits</h2>
+          </div>
+        </div>
       </div>
-      <button class="button">Buy Now</button>
+
+      <div class="realfruit-div">
+        <div class="realfruit-left-div">
+          <img
+            class="realfruit-image"
+            src="./flavours/mockups/mockup (2).png"
+            alt=""
+          />
+        </div>
+        <div class="realfruit-right-div">
+          <h2 class="realfruit-heading">
+            Drink <span>real</span> fruit everytime
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+            vel ad molestias asdjasndj asdsadjaskd jashdjkashd kjashdkasj
+          </p>
+          <div class="realfruit-points">
+            <p class="realfruit-para-points">
+              <img
+                class="realfruit-tickmark-icon"
+                src="./flavours/icons/tickmark.png"
+                alt=""
+              />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="realfruit-para-points">
+              <img
+                class="realfruit-tickmark-icon"
+                src="./flavours/icons/tickmark.png"
+                alt=""
+              />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="realfruit-para-points">
+              <img
+                class="realfruit-tickmark-icon"
+                src="./flavours/icons/tickmark.png"
+                alt=""
+              />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="see_all">
-    <button class="see_all" type="button" onclick="location.href='drinkspage.html'">See All</button>
-  </div>
-
-
-
-
-
-  <div class="container3">
-    <div class="rectangle">
-      <p>Whether enjoyed fresh, grilled, or blended into smoothies, its versatility makes it a beloved fruit among many,
-        offering a burst of sunshine in every bite.</p>
-      <p>PINEAPPLE JUICE</p>
-      <button><a href="#"></a>ORDER NOW</button>
-    </div>
-    <div class="square">
-      <a href="#" target="_blank">
-        <img src="./flavours/arrow_icon.png" alt="go_link">
-      </a>
-
-    </div>
-  </div>
-
-
-
-  <footer>
-    <p>&copy; Quench 2024 Showcase. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Contact Us</a>
-    </div>
-    <div class="social">
-      <a href="https://instagram.com/_anjilii__?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3Dx"><i
-          class="fab fa-instagram"></i></a>
-      <a href=""><i class="fab fa-snapchat"></i></a>
-      <a href=""><i class="fab fa-twitter"></i></a>
-      <a href=""><i class="fab fa-facebook"></i></a>
-    </div>
-  </footer>
-
-
-
-
-  <script src="./script.js"></script>
-</body>
-
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2 class="footer-logo">Quench</h2>
+        <p class="footer-tagline">Refreshing your day, one sip at a time.</p>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="footer-copy">© 2023 Quench. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
